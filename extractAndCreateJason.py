@@ -38,11 +38,7 @@ def extractIndividualResult(fileName:str) -> dict:
 
     for student in refearedStudents:
         data = str(student).replace("{", ",").replace("}", "").replace(" ", "").replace("\n", "").split(",")
-        individualResultJson[data[0]] = {"pass" : False, "failed" : data[1:]}
-        
-    with open(f"{fileName}_individual.json", "w") as file:
-        json.dump(individualResultJson, file, indent= 2,sort_keys= True)
-    
+        individualResultJson[data[0]] = {"pass" : False, "failed" : data[1:]}    
     return individualResultJson
 
 
