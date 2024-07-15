@@ -56,7 +56,7 @@ async def custom_404_handler(_, __):
 async def getExitsData():
     return {"files-list": os.listdir("data")}
 
-@app.get("/individual/")
+@app.post("/individual/")
 async def get_individual_data(individual: Individual):
     return getResult(
         examType=individual.examType, 
@@ -67,7 +67,7 @@ async def get_individual_data(individual: Individual):
         isIndividual= True,
     )
 
-@app.get("/inistitution/")
+@app.post("/inistitution/")
 async def get_inistitution_data(inistitution: Inistitution):
     return getResult(
         examType=inistitution.examType, 
