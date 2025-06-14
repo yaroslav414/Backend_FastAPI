@@ -8,7 +8,7 @@ On the backend, I utilized Python with its powerful FastAPI framework. FastAPI w
 Through this project, I gained valuable hands-on experience in full-stack development, effectively integrating the frontend with the backend, and ensuring smooth communication between the two. This project not only enhanced my technical skills but also reinforced my understanding of end-to-end web application development.
 
 ## Links
-##### Web APP
+##### Web APP 
 https://diplomaresultmanagement.web.app/
 
 ##### Backend API GitHub Project Link
